@@ -23,7 +23,7 @@ export const insertData = async(req,res)=>{
         }
         
         res.status(202).json({message:"updated Successfully",
-            data: updatedata})
+            data: updatedata.userName})
     } catch (error) {
         res.status(500).json(error)
     }
